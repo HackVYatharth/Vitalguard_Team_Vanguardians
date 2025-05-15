@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalGuard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="teamLogo.jpg" alt="Team Logo">
+                <a href="#container">VitalGuard</a>
+            </div>
+            <div class="nav-links">
+                <a href="#container">Home</a>
+                <a href="#pulseRate">Heart Pulse</a>
+                <a href="#bloodPressure">Blood Pressure</a>
+                <a href="#ageFactor">Age Factor</a>
+                <a href="#foot">Team Details</a>
+            </div>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="image">
+            <img src="decorationImage.jpg" alt="A doctor's Pad and Sethoscope">
+        </div>
+        <div class="calc">
+            <h2 style="text-align: center;">Health Index Calculator</h2>
+            <label for="age" style="font-size: 20px; font-weight: bold;">Enter Age:</label>
+            <input type="number" id="age" min="1" max="120" placeholder="Enter your age" required>
+
+            <label for="pulse" style="font-size: 18px; font-weight: bold;">Select Pulse Rate (bpm):</label>
+            <input type="text" id="pulse" placeholder="Enter your Pulse Rate">
+
+            <label for="bp" style="font-size: 18px; font-weight: bold;">Enter Blood Pressure (Systolic/Diastolic
+                mmHg):</label>
+            <input type="text" id="bp" placeholder="e.g. 120/80" required>
+            <br>
+            <button onclick="calculateHealthIndex()">Calculate</button>
+        </div>
+    </div>
+
+    <div id="pulseRate">
+        <div class="heading">
+            <h2>What is a normal heart rate?</h2>
+        </div>
+        <div class="agepara">
+            <p>
+            <h4 style="color: black; font-weight: bold; font-size: 120%;">Your pulse, both at rest and during exercise,
+                can reveal your risk for heart attack and your aerobic
+                capacity!</h4>
+            A healthy heart doesn't beat with the regularity of clockwork. It speeds up and slows down to accommodate
+            your changing need for oxygen as your activities vary throughout the day. A "normal" heart rate varies from
+            person to person. However, an unusually high resting heart rate or low maximum heart rate may signify an
+            increased risk of heart disease or other medical condition.
+            <br>
+            When you are at rest, your heart is pumping the lowest amount of blood to supply the oxygen your body's
+            needs. Although the official normal resting heart rate ranges from 60 to 100 beats per minute, the range for
+            most healthy adults is between 55 and 85 beats per minute.
+            <br>
+            <br>
+            However, There is no specific good resting heart rate. Well-trained athletes can have numbers in the 40s.
+            But a heart
+            rate that slow for the average person would be concerning and should prompt a call to your doctor's office,
+            especially if you felt weak, lightheaded, or short of breath.
+            <br><br>
+            On the other end of the scale, a resting heart rate that is consistently above 90 beats per minute is also
+            something your doctor should be aware of. Although it is still formally still normal, it could be a clue of
+            something amiss, but not necessarily a serious problem.
+            </p>
+            <img src="data.png" alt="Average Data" height="200px" style="align-items: center;">
+        </div>
+    </div>
+
+    <div id="bloodPressure">
+        <div class="heading">
+            <h2>Relationship Between Blood Pressure and Health</h2>
+        </div>
+        <div class="agepara">
+            <p>
+                Abnormal blood pressure and an aging population have become one of the major public health problems
+                facing the world1–3. Overall, 30.71% (≈ 323.6 million) of Chinese adult ≥ 65 years of age had
+                high-normal blood pressure (HNBP) between 2012 and 20154. The Healthy China Action (2019–2030) issued by
+                the National Health and Wellness Committee in 2019 emphasizes that primary medical and health
+                institutions should have the ability to provide standardized health management services for hypertension
+                patients within their jurisdiction.
+                <br><br>
+                When we think about how blood pressure can adversely affect health, the focus is primarily on
+                hypertension. That refers to blood pressure that is higher than normal. Having high blood pressure
+                increases someone's risk of developing heart disease and of having a stroke. Each of these is a leading
+                cause of death in the U.S. But having blood pressure that is lower than normal, which is known as
+                hypotension, can have a negative impact on health, as well. When blood pressure drops too far, the
+                tissues of the body begin to develop a deficit of oxygen. This can cause symptoms that range from mild
+                to severe. A substantial or sustained drop in blood pressure can be life-threatening.
+                <br><br>
+                High blood pressure increases the risk of heart diseases, stroke, kidney disease, and dementia. In
+                addition, if the blood pressure remains constantly high, your blood vessels may weaken and eventually
+                lead to narrow blood vessels and clots. High blood pressure is dangerous because it makes our body work
+                harder to pump blood into the body. Although it’s rare high blood pressure may lead to bursting of the
+                blood vessels or even heart failure.
+                <br><br>
+                People who consume a lot of salt, are smokers, or don’t exercise are more prone to high blood pressure.
+                High blood pressure has a lot to do with our family history. Aging can also be a reason for high blood
+                pressure, which not many people know about. Having health issues like diabetes, kidney disease, or high
+                cholesterol can double the risk of high blood pressure.
+            </p>
+        </div>
+    </div>
+
+    <div id="ageFactor">
+        <div class="heading">
+            <h2>Common Health Conditions associated with ageing!</h2>
+        </div>
+        <div class="agepara">
+            <p>
+                Common conditions in older age include hearing loss, cataracts and refractive errors, back and neck pain
+                and osteoarthritis, chronic obstructive pulmonary disease, diabetes, depression and dementia. As people
+                age, they are more likely to experience several conditions at the same time.
+                Older age is also characterized by the emergence of several complex health states commonly called
+                geriatric syndromes. They are often the consequence of multiple underlying factors and include frailty,
+                urinary incontinence, falls, delirium and pressure ulcers.
+                <br><br>
+                A considerable number of studies have examined the impact of age stereotypes or subjective aging on
+                health-related outcomes. Experimental studies investigated the transient impact of a short-term
+                activation of age stereotypes or subjective age on health-related outcomes, whereas longitudinal
+                observational studies showed the long-term impact of VoA. In addition, a number of cross-sectional
+                studies exist on the relation of VoA and health-related outcomes. However, the following sections focus
+                on experimental and longitudinal observational studies, because they are better suited to speak to the
+                causality and directionality of effects.
+                <br><br>
+                There is no typical older person. Some 80-year-olds have physical and mental capacities similar to many
+                30-year-olds. Other people experience significant declines in capacities at much younger ages. A
+                comprehensive public health response must address this wide range of older people’s experiences and
+                needs.
+                <br><br>
+                The diversity seen in older age is not random. A large part arises from people’s physical and social
+                environments and the impact of these environments on their opportunities and health behaviour. The
+                relationship we have with our environments is skewed by personal characteristics such as the family we
+                were born into, our sex and our ethnicity, leading to inequalities in health.
+            </p>
+        </div>
+    </div>
+    <footer id="foot">
+        <h3 style="font-size: 120%; font-weight: bold;">By The VanGuardians</h3>
+        <p>
+        <ul id="listname" style="font-size: 20px;">
+            <li>Dhruv Singh</li>
+            <br>
+            <li>Vanshika Purohit</li>
+            <br>
+            <li>Priyanshu Jha</li>
+            <br>
+            <li>D. Hemashree</li>
+            <br>
+            <li>Yatharth Bisaria</li>
+        </ul>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

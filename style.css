@@ -1,0 +1,243 @@
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background: linear-gradient(120deg, #333938, #1da2bd);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.navbar .nav-links a:hover {
+    background: none;
+    border-bottom: 2px solid #27375b;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.logo img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 5px rgb(37, 205, 231));
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px rgb(37, 205, 231));
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+
+.image img {
+    height: 550px;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+}
+
+.image,
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.calc {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #242d8b, #1da2bd);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 40px solid #5681e1;
+}
+
+label,
+input,
+select,
+button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 8px;
+}
+
+button {
+    background: linear-gradient(120deg, #14353a, #3dbbff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #170846, #4f52eb);
+}
+
+p {
+    font-weight: bold;
+}
+
+#ageFactor {
+    border-top: 5px solid black;
+    background: linear-gradient(to right, #002c52, #0ed2f7);
+    color: white;
+    height: 500px;
+    border-bottom: 5px solid black;
+}
+
+#ageFactor .heading {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 8px;
+    text-decoration: underline black;
+}
+
+#ageFactor .agepara {
+    margin-top: 5px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+#pulseRate {
+    border-top: 5px solid black;
+    margin-top: 50px;
+    background: linear-gradient(to right, #002c52, #0ed2f7);
+    color: white;
+    height: 625px;
+    padding-bottom: 20px;
+}
+
+#pulseRate .heading {
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 8px;
+}
+
+#pulseRate .agepara {
+    align-items: center;
+    justify-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 7px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#pulseRate img {
+    justify-items: center;
+    align-items: center;
+}
+
+#bloodPressure {
+    border-top: 5px solid black;
+    background: linear-gradient(to right, #002c52, #0ed2f7);
+    height: 500px;
+}
+
+#bloodPressure .heading {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 8px;
+    text-decoration: underline black;
+}
+
+#bloodPressure .agepara {
+    margin-top: 5px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    color: white;
+}
+
+#foot {
+    background: linear-gradient(120deg, #333938, #1da2bd);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: black;
+}
+
+#listname {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

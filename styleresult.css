@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    background: linear-gradient(120deg, #f8f9fa, #b0d3da);
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(120deg, #f8f9fa, #b0d3da);
+    }
+
+    50% {
+        background: linear-gradient(120deg, #b0d3da, #f8f9fa);
+    }
+
+    100% {
+        background: linear-gradient(120deg, #f8f9fa, #b0d3da);
+    }
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.right-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.result-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: slideUp 0.8s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.result-container:hover {
+    transform: scale(1.02);
+}
+
+.result-container h2 {
+    color: #333;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.healthbox {
+    width: 150px;
+    height: 50px;
+    border: 4px solid #1da2bd;
+    /* Make the border thicker and more visible */
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: #ffffff;
+    color: #1da2bd;
+    border-radius: 10px;
+    /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* Ensures proper centering */
+}
+
+.health-value {
+    width: 180px;
+    height: 50px;
+    border: 3px solid #1da2bd;
+    /* Visible border */
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #1da2bd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Soft shadow */
+    display: block;
+    margin: 10px auto;
+    /* Centers the box */
+    outline: none;
+    padding: 5px;
+}
+
+
+
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.feedback-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.feedback-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.feedback-section textarea:focus {
+    border-color: #1da2bd;
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #1da2bd;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: #14353a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+    background: linear-gradient(120deg, #333938, #1da2bd);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 5px rgb(37, 205, 231));
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px rgb(37, 205, 231));
+    }
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.logo a {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.image img {
+    height: 550px;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding-top: 60px;
+}
